@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>后台主页</title>
-  <link rel="stylesheet" href="/assets/lib/layui-v2.7.6/layui/css/layui.css">
+  <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
   <link rel="stylesheet" href="/assets/css/index.css">
   <link rel="stylesheet" href="/assets/fonts/iconfont.css">
   <!-- 导入layui的js文件 -->
-  <script src="/assets/lib/layui-v2.7.6/layui/layui.js"></script>
+  <script src="./assets/lib/layui/layui.js"></script>
   <!-- 导入jQuery -->
   <script src="/assets/lib/jquery.js"></script>
 </head>
@@ -35,9 +35,9 @@
             个人中心
           </a>
           <dl class="layui-nav-child">
-            <dd><a href="">基本资料</a></dd>
-            <dd><a href="">更换头像</a></dd>
-            <dd><a href="">重置密码</a></dd>
+            <dd><a href="/user/user_info.html" target="fm">基本资料</a></dd>
+            <dd><a href="/user/user_avatar.html" target="fm">更换头像</a></dd>
+            <dd><a href="/user/user_pwd.html" target="fm">重置密码</a></dd>
           </dl>
         </li>
         <li class="layui-nav-item"><a href="javascript:;" id="btnlogout"><i class="iconfont icon-tuichu"></i>退出</a></li>
@@ -53,7 +53,8 @@
         </div>
         <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
         <ul class="layui-nav layui-nav-tree" lay-shrink="all">
-          <li class="layui-nav-item layui-this"><a href="/home/dashboard.html" target="fm"><i class="iconfont icon-home"></i>首页</a></li>
+          <li class="layui-nav-item layui-this"><a href="/home/dashboard.html" target="fm"><i
+                class="iconfont icon-home"></i>首页</a></li>
           <li class="layui-nav-item">
             <a class="" href="javascript:;"><i class="iconfont icon-16"></i>文章管理</a>
             <dl class="layui-nav-child">
@@ -65,9 +66,9 @@
           <li class="layui-nav-item">
             <a href="javascript:;"><i class="iconfont icon-user"></i>个人中心</a>
             <dl class="layui-nav-child">
-              <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>基本资料</a></dd>
-              <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>更换头像</a></dd>
-              <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>重置密码</a></dd>
+              <dd><a href="/user/user_info.html" target="fm"><i class="layui-icon layui-icon-app"></i>基本资料</a></dd>
+              <dd><a href="/user/user_avatar.html" target="fm"><i class="layui-icon layui-icon-app"></i>更换头像</a></dd>
+              <dd><a href="/user/user_pwd.html" target="fm"><i class="layui-icon layui-icon-app"></i>重置密码</a></dd>
             </dl>
           </li>
         </ul>
